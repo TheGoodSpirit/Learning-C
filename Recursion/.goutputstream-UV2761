@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// 
+int factorial(int number);
+
+int main()
+{
+    int number, factorial;
+	printf("\n---------- Get Factorial ----------\n");
+    scanf("%d", &number);
+    factorial = factorial(number);
+	return 0;
+}
+
