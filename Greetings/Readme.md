@@ -1,4 +1,6 @@
-#Name Input and Greeting
+ -- 
+ Name Input and Greeting 
+ --
 
 ---------------------------------------------
 ---------------------------------------------
@@ -23,7 +25,9 @@ After reading the name, the code uses another printf() function to display a gre
 
 Finally, the return 0; statement indicates that the program has executed successfully, and the value 0 is returned to the operating system.
 
-#Conclusion 
+Conclusion ::
+
+
 This program asks the user to input their name, and then it greets them by displaying "Hello" followed by their name on the console.
 ---------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------
