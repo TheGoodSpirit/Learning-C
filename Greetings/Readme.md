@@ -1,5 +1,14 @@
 #Name Input and Greeting
 
+---------------------------------------------
+---------------------------------------------
+This code prompts the user to enter their name, then greets them by displaying "Hello" followed by their name. It is a simple C program using input/output functions.
+---------------------------------------------
+---------------------------------------------
+
+---------------------------------------------------------------------------------------------------
+--------------------------------------------- Details ---------------------------------------------
+---------------------------------------------------------------------------------------------------
 The code begins by including two standard libraries: <stdio.h> and <stdlib.h>. These libraries provide functions for input/output operations and memory management, respectively.
 
 The main() function is the entry point of the program. It's where the execution starts.
@@ -16,3 +25,6 @@ Finally, the return 0; statement indicates that the program has executed success
 
 #Conclusion 
 This program asks the user to input their name, and then it greets them by displaying "Hello" followed by their name on the console.
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
