@@ -15,7 +15,7 @@ The code begins by including two standard libraries: <stdio.h> and <stdlib.h>. T
 
 The main() function is the entry point of the program. It's where the execution starts.
 
-Inside the main() function, I declared a variable called name of type char array with a size of 20. This array will be used to store the name entered by the user.
+Inside the main() function, there is a variable called name of type char array with a size of 20. This array will be used to store the name entered by the user.
 
 The printf() function is used to display the message "Enter your name : " on the console, prompting the user to input their name.
 
