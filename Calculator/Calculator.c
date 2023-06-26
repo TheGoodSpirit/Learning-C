@@ -1,31 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// declaring a function
-int calculate(int num1,int num2);
-
 int main() {
 
 	// Declaring variables to store the numbers
-	int num1, num2;
-	
+	int op;
+	float num1, num2;
+
 	printf("Enter First Number : ");
-	scanf("%d", &num1);
+	scanf("%f", &num1);
 
 	printf("Enter Second Number : ");
-	scanf("%d", &num2);
-
-	printf("\nResult = %d", calculate(num1, num2));
-	
-	return 0;
-	
-}
-
-// initializing the calculate() function
-int calculate(int num1, int num2) {
-
-	int res;
-	int op;
+	scanf("%f", &num2);
 
 	printf("\n---------- OPTIONS ----------\n");
 	printf("\nType 1 for Adition");
@@ -35,27 +21,25 @@ int calculate(int num1, int num2) {
 
 	printf("\nOperation : ");
 	scanf("%d", &op);
-	
+
+	// working mechanism for the calculation
 	switch (op)
 	{
 		case 1:
-			res = num1 + num2;
-			return res;
+			printf("Rsult = %f", num1 + num2);
 			break;
 		case 2:
-			res = num1 - num2;
-			return res;
+			printf("Rsult = %f", num1 - num2);
 			break;
 		case 3:
-			res = num1 * num2;
-			return res;
+			printf("Rsult = %f", num1 * num2);
 			break;
 		case 4:
-			res = num1 / num2;
-			return res;
+			printf("Rsult = %f", num1 / num2);
 			break;
 		default:
 			return 0;
 	}
-	
+
+	return 0;
 }
