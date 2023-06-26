@@ -9,27 +9,43 @@ struct ID_CARD {
 
 int main() {
 
-	int data_value;
-	printf("Enter the range of the data collection : ");
-	scanf("%d", &data_value);
+	FILE *STD_REC;
 
-	struct ID_CARD STUDENT[data_value];
+	int data_range;
+	printf("Enter the range of the data collection : ");
+	scanf("%d", &data_range);
+
+	struct ID_CARD STUDENT[data_range];
+
+	STD_REC = fopen("STD_REC.txt", "a");
+
+	if (data_range == 0) {
+		printf("There is nothing to record!");
+		exit(1);
+	}
+
 	printf("\n---------- TAKING INPUT ---------- \n");
 	// taking input
-	for ( int i = 1; i <= data_value; i++) {
-		printf("\n---------- For %d ----------\n", i);
-		printf("Enter your name : ");
+	for ( int i = 1; i <= data_range; i++) {
+		printf("\n---------- %d ----------\n", i);
+		printf("Enter name : ");
 		scanf("%s", STUDENT[i].name);
-		printf("Enter your age : ");
+		printf("Enter age : ");
 		scanf("%d", &STUDENT[i].age);
-		printf("Enter your rollno : ");
+		printf("Enter roll no : ");
 		scanf("%d", &STUDENT[i].rollno);
 	}
-	printf("\n---------- DISPLAYING OUTPUT ---------- \n");
-	// displaying output
-	for ( int i = 1; i <= data_value; i++) {
-		printf("\n---------- For %d ----------\n", i);
-		printf("Name = %s\nAge = %d\nRoll no. = %d", STUDENT[i].name, STUDENT[i].age, STUDENT[i].rollno);
+
+	for (int j = 1; j <= data_range; j++) {
+		fprintf(STD_REC, "\nName = %s\n", STUDENT[j].name);
+		fprintf(STD_REC, "Age = %d\n", STUDENT[j].age);
+		fprintf(STD_REC, "Roll no. = %d\n", STUDENT[j].rollno);
 	}
+
+	printf("\n|---------- ------------------- ------------ |");
+	printf("\n| Data is successfully added to the database |");
+	printf("\n|---------- ------------------- -------------|");
+	fclose(STD_REC);
+
 	return 0;
 }
