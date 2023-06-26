@@ -1,25 +1,24 @@
-The program includes the necessary header files for input/output operations (stdio.h) and memory allocation (stdlib.h).
+The program includes the necessary header files for input/output operations (stdio.h) and standard library functions (stdlib.h).
 
-The calculate function is declared at the beginning. It takes two integer arguments (num1 and num2) and returns an integer value.
+###In the main function:
+Integer variable op and float variables num1 and num2 are declared to store the user's input.
 
-### In the main function:
-Two integer variables num1 and num2 are declared to store the user's input.
-The user is prompted to enter the first number using printf and scanf.
-The user is prompted to enter the second number using printf and scanf.
-The calculate function is called with num1 and num2 as arguments, and the result is printed using printf.
+The user is prompted to enter the first number using printf and scanf, with the format specifier %f for float.
 
-### The calculate function:
-Declares integer variables res to store the result and op to store the user's choice of operation.
-Displays a menu of available operations using printf.
-Prompts the user to enter the operation choice using scanf.
+The user is prompted to enter the second number using printf and scanf, also using %f.
 
-### Uses a switch statement to perform the selected operation:
-If op is 1, it adds num1 and num2 and stores the result in res.
-If op is 2, it subtracts num2 from num1 and stores the result in res.
-If op is 3, it multiplies num1 and num2 and stores the result in res.
-If op is 4, it divides num1 by num2 and stores the result in res.
-If none of the above cases match, it returns 0 (indicating an invalid operation).
-Finally, the res value is returned to the main function.
+A menu of available operations is displayed using printf. The user is prompted to enter the operation choice using scanf with %d format specifier to read an integer.
+The program uses a switch statement to perform the selected operation:
 
-### Note: 
-The code assumes that the user will provide valid input (i.e., the second number is not zero when performing division). It does not handle cases such as division by zero or invalid input, which could result in unexpected behavior or errors.
+If op is 1, it calculates the addition of num1 and num2 and prints the result using printf.
+
+If op is 2, it calculates the subtraction of num2 from num1 and prints the result.
+
+If op is 3, it calculates the multiplication of num1 and num2 and prints the result.
+
+If op is 4, it calculates the division of num1 by num2 and prints the result.
+
+If none of the above cases match, it returns 0 (exiting the program). The result of the calculation is printed to the console using printf.
+
+###Note: 
+The code assumes that the user will provide valid input and doesn't handle cases such as division by zero or invalid input.
