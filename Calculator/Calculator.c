@@ -26,20 +26,19 @@ int main() {
 	switch (op)
 	{
 		case 1:
-			printf("Rsult = %f", num1 + num2);
+			printf("Result = %f", num1 + num2);
 			break;
 		case 2:
-			printf("Rsult = %f", num1 - num2);
+			printf("Result = %f", num1 - num2);
 			break;
 		case 3:
-			printf("Rsult = %f", num1 * num2);
+			printf("Result = %f", num1 * num2);
 			break;
 		case 4:
-			printf("Rsult = %f", num1 / num2);
+			printf("Result = %f", num1 / num2);
 			break;
 		default:
 			return 0;
 	}
-
 	return 0;
 }
