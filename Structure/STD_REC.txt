@@ -1,0 +1,36 @@
+
+Name = hello
+Age = 1
+Roll no. = 23
+
+Name = hi
+Age = 43
+Roll no. = 11
+
+Name = h
+Age = 8
+Roll no. = 9
+
+Name = jh
+Age = 4
+Roll no. = 88
+
+Name = jh
+Age = 9
+Roll no. = 6
+
+Name = kj
+Age = 5
+Roll no. = 76
+
+Name = k
+Age = 8
+Roll no. = 3
+
+Name = j
+Age = 8
+Roll no. = 8
+
+Name = hh
+Age = 4
+Roll no. = 65

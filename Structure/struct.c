@@ -22,30 +22,30 @@ int main() {
 	if (data_range == 0) {
 		printf("There is nothing to record!");
 		exit(1);
-	}
+	} else {
+		printf("\n---------- TAKING INPUT ---------- \n");
+		// taking input
+		for ( int i = 1; i <= data_range; i++) {
+			printf("\n---------- %d ----------\n", i);
+			printf("Enter name : ");
+			scanf("%s", STUDENT[i].name);
+			printf("Enter age : ");
+			scanf("%d", &STUDENT[i].age);
+			printf("Enter roll no : ");
+			scanf("%d", &STUDENT[i].rollno);
+		}
 
-	printf("\n---------- TAKING INPUT ---------- \n");
-	// taking input
-	for ( int i = 1; i <= data_range; i++) {
-		printf("\n---------- %d ----------\n", i);
-		printf("Enter name : ");
-		scanf("%s", STUDENT[i].name);
-		printf("Enter age : ");
-		scanf("%d", &STUDENT[i].age);
-		printf("Enter roll no : ");
-		scanf("%d", &STUDENT[i].rollno);
-	}
+		for (int j = 1; j <= data_range; j++) {
+			fprintf(STD_REC, "\nName = %s\n", STUDENT[j].name);
+			fprintf(STD_REC, "Age = %d\n", STUDENT[j].age);
+			fprintf(STD_REC, "Roll no. = %d\n", STUDENT[j].rollno);
+		}
 
-	for (int j = 1; j <= data_range; j++) {
-		fprintf(STD_REC, "\nName = %s\n", STUDENT[j].name);
-		fprintf(STD_REC, "Age = %d\n", STUDENT[j].age);
-		fprintf(STD_REC, "Roll no. = %d\n", STUDENT[j].rollno);
+		printf("\n|---------- ------------------- ------------ |");
+		printf("\n| Data is successfully added to the database |");
+		printf("\n|---------- ------------------- -------------|");
+		fclose(STD_REC);
 	}
-
-	printf("\n|---------- ------------------- ------------ |");
-	printf("\n| Data is successfully added to the database |");
-	printf("\n|---------- ------------------- -------------|");
-	fclose(STD_REC);
 
 	return 0;
 }
